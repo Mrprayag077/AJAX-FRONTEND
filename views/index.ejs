@@ -49,7 +49,7 @@
     <form>
         <select name="users" onchange="showuser(this.value)" id="lll">
             <option value="">select</option>
-            <option value="1">1</option>
+            <option value="1">111</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -80,6 +80,7 @@
                     data: JSON.stringify({ choice: str }),
                     success: function (result) {
                         $('#txr_hint').html(result.html)
+                        console.log('success');
                         console.log('success');
                     }
 
